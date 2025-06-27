@@ -1,9 +1,9 @@
 # Titanic & Salary ML Projects Dashboard
 
-![Age and Fare Distribution](age_fare_distribution.png)
-![Correlation Heatmap](correlation_heatmap.png)
-![Linear Regression Plot](linear_regression_plot.png)
-![Survival by Sex and Pclass](survival_by_sex_pclass.png)
+![Age and Fare Distribution](technohacks_ml_projects/age_fare_distribution.png)
+![Correlation Heatmap](technohacks_ml_projects/correlation_heatmap.png)
+![Linear Regression Plot](technohacks_ml_projects/linear_regression_plot.png)
+![Survival by Sex and Pclass](technohacks_ml_projects/survival_by_sex_pclass.png)
 
 This project is a collection of three machine learning mini-projects, presented in a unified interactive dashboard using Streamlit. The tasks include data preprocessing, exploratory data analysis (EDA), and linear regression modeling, using the Titanic and Salary datasets.
 
@@ -23,21 +23,21 @@ This project is a collection of three machine learning mini-projects, presented 
 ## Tasks Overview
 
 ### 1. Data Preprocessing (Titanic)
-![Age and Fare Distribution](age_fare_distribution.png)
+![Age and Fare Distribution](technohacks_ml_projects/age_fare_distribution.png)
 - Cleans the Titanic dataset by handling missing values, dropping irrelevant columns, encoding categorical variables, and normalizing features.
 - Output: `cleaned_titanic.csv`
 - Script: `task1_data_preprocessing/preprocess_titanic.py`
 
 ### 2. Exploratory Data Analysis (EDA)
-![Correlation Heatmap](correlation_heatmap.png)
-![Survival by Sex and Pclass](survival_by_sex_pclass.png)
+![Correlation Heatmap](technohacks_ml_projects/correlation_heatmap.png)
+![Survival by Sex and Pclass](technohacks_ml_projects/survival_by_sex_pclass.png)
 - Loads the cleaned Titanic data and provides:
   - Data overview and statistics
   - Visualizations: Age/Fare distributions, survival rates by sex/class, correlation heatmap
 - Script: `task2_eda/eda_titanic.py`
 
 ### 3. Linear Regression (Salary Prediction)
-![Linear Regression Plot](linear_regression_plot.png)
+![Linear Regression Plot](technohacks_ml_projects/linear_regression_plot.png)
 - Uses the Salary dataset to build a simple linear regression model predicting salary from years of experience.
 - Evaluates model with MSE and R², and visualizes predictions.
 - Script: `task3_linear_regression/linear_regression.py`
