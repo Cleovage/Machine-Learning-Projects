@@ -44,11 +44,13 @@ elif page == "EDA":
         st.subheader("Dataset Preview (First 10 Rows)")
         st.dataframe(df.head(10), use_container_width=True, hide_index=True)
 
-        st.subheader("Dataset Info")
-        buffer = io.StringIO()
-        df.info(buf=buffer)
-        s = buffer.getvalue()
-        st.code(s, language="text")
+        st.subheader("Dataset Info (Table)")
+        info_df = pd.DataFrame({
+            'Column': df.columns,
+            'Non-Null Count': df.notnull().sum().values,
+            'Dtype': df.dtypes.values
+        })
+        st.dataframe(info_df, use_container_width=True, hide_index=True)
 
         st.subheader("Missing Values (Highlighted)")
         missing = df.isnull().sum().to_frame(name="Missing Count")
