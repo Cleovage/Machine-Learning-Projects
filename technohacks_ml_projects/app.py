@@ -41,6 +41,9 @@ elif page == "EDA":
     uploaded_file = st.file_uploader("Upload Cleaned Titanic CSV", type=["csv"], key="eda")
     if uploaded_file:
         df = pd.read_csv(uploaded_file)
+        st.subheader("Dataset Preview")
+        st.dataframe(df.head())
+
         st.subheader("Dataset Info")
         buffer = io.StringIO()
         df.info(buf=buffer)
