@@ -7,6 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 import os
+import io
 
 st.sidebar.title("Titanic ML Dashboard")
 page = st.sidebar.radio("Go to", ["Preprocessing", "EDA", "Linear Regression"])
@@ -41,9 +42,10 @@ elif page == "EDA":
     if uploaded_file:
         df = pd.read_csv(uploaded_file)
         st.subheader("Dataset Info")
-        buffer = []
+        buffer = io.StringIO()
         df.info(buf=buffer)
-        st.text("\n".join(buffer))
+        s = buffer.getvalue()
+        st.text(s)
         st.subheader("Missing Values")
         st.write(df.isnull().sum())
 
