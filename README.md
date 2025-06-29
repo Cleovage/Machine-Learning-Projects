@@ -87,6 +87,6 @@ This project is a collection of three machine learning mini-projects, presented 
 
 ---
 
-**Author:** [Ranjith]
+**Author:** Ranjith (aka lipoou)
 
 Feel free to use, modify, and extend this project for learning and experimentation!
